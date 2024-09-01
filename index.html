@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!--* Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!--* fontawesome  -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!--* Bootstrap  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--* style  -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section class="login py-5">
+    <div class="container w-50 mx-auto text-center p-5 text-white myForm">
+      <h1 class="mb-4 text-main">Smart Login System</h1>
+      <form action="" class="">
+        <div class="form-floating my-3">
+          <input oninput="validation(this)" type="text" class="form-control" id="username" placeholder="name@example.com">
+          <label for="username">Enter your username</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input oninput="validation(this)" type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+          <label for="emailInput"> Enter your email</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input oninput="validation(this)" type="password" class="form-control" id="passwordInput" placeholder="Password">
+          <label for="passwordInput">Enter your password</label>
+        </div>
+
+        <p id="invalid" class="text-danger text-center fw-bold d-none"></p>
+
+        <button type="button" onclick="signUp()" class="btn btn-outline-main w-100 my-3 fs-6">Sign Up</button>
+      </form>
+      <h5>You Have an Account? <a href="loginPage/login.html" class=" reg text-decoration-none text-main"> Sign In</a></h5>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
