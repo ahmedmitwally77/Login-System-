@@ -30,7 +30,7 @@ function login() {
         console.log(user.username);
         localStorage.setItem("correctUser", user.username);
         clearInputs();
-        window.location.href = "../../homePage/home.html";
+        window.location.href = "../homePage/home.html";
       } 
       else if (
         user.email === email.value &&
