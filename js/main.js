@@ -27,7 +27,7 @@ function signUp() {
     users.push(user);
     clearInputs();
     localStorage.setItem("users", JSON.stringify(users));
-    window.location.href = "../loginPage/login.html";
+    window.location.href = "loginPage/login.html";
   } else if (!validation(uname) & !validation(email) & !validation(password)) {
     invalid.classList.remove("d-none");
     invalid.innerHTML = "Invalid Input Should Enter Valid Data";
